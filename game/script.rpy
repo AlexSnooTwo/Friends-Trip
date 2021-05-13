@@ -44,7 +44,11 @@ label start:
 
     # These display lines of dialogue.
 
+<<<<<<< HEAD
     e "Kevin tu es un salaud ouais mais toi tes un nazillon hehe"
+=======
+    e "You've created a new cum'Py g."
+>>>>>>> Kevin
 
     e "plUS QUE D4ËTRE UN SALAUD? TU ES UN BEL ENCUL2!"
 menu:
