@@ -18,13 +18,19 @@ label splashscreen:
 
 #Characters
 
-define a = Character("Alexis")
-define k = Character("Kevin")
-define n = Character("Nils")
-define f = Character("Fabrice")
+define a = Character("Alexis") #Red
+define k = Character("Kevin") #Yellow
+define n = Character("Nils") #Blue
+define f = Character("Fabrice") #Green
+#Ajouter 4 Filles, une chacun
 
 define gui.dialogue_text_outlines = [ (0, "#00000080", 2, 2) ]
 define gui.name_text_outlines = [ (0, "#00000080", 2, 2) ]
+
+#Scène qui commence sur un rève d'Alexis, rève qu'il se retrouve à nouveau
+#à Valence à choisir les putes
+#Se réveille de son rêve à l'arrivée à Bruxelles.
+
 
 
 label start:
@@ -33,11 +39,7 @@ label start:
 
     show eileen happy
 
-
-    a "Kevin tu es un salaud"
-    k "Ouais mais toi tes un nazillon hehe"
-
-menu:
+menu test:
      "What should I be"
 
      "Salaud.":

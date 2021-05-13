@@ -305,7 +305,7 @@ screen navigation():
 
             #"textbutton _("History") action ShowMenu("history")
 
-            textbutton _("Main Menu") action MainMenu()
+            textbutton _("Menu") action MainMenu()
 
             textbutton _("Save") action ShowMenu("save")
 
@@ -362,7 +362,7 @@ screen main_menu():
     #use navigation
 
     hbox:
-                
+
         style_prefix "main_menu"
         xalign 0.5
         ypos 1000
@@ -377,7 +377,7 @@ screen main_menu():
 
             #"textbutton _("History") action ShowMenu("history")
 
-            textbutton _("Main Menu") action MainMenu()
+            textbutton _("Menu") action MainMenu()
 
             textbutton _("Save") action ShowMenu("save")
 
@@ -437,6 +437,7 @@ style main_menu_version:
     properties gui.text_properties("version")
     xalign 0.025
     yalign 0.02
+
 ## Game Menu screen ############################################################
 ##
 ## This lays out the basic common structure of a game menu screen. It's called
