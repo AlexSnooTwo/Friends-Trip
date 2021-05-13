@@ -46,7 +46,7 @@ label start:
 
     e "Kevin tu es un salaud"
 
-    e "Once you add a story, pictures, and music, you can release it to the world!"
+    e "plUS QUE D4ËTRE UN SALAUD? TU ES UN BEL ENCUL2!"
 menu:
      "What should I do?"
 
