@@ -46,7 +46,7 @@ label start:
 
     e "Kevin tu es un salaud ouais mais toi tes un nazillon hehe"
 
-    e "plUS QUE D4ËTRE UN SALAUD? TU ES UN BEL ENCUL2!"
+    e ""
 menu:
      "What should I do?"
 
