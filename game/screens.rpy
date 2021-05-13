@@ -423,9 +423,8 @@ style main_menu_frame:
 
 #Changer la position du titre
 style main_menu_vbox:
-    xalign 1.00
+    xalign 0.025
     xoffset -30
-    xmaximum 1200
     yalign 0.02
     yoffset -30
 
@@ -437,8 +436,8 @@ style main_menu_title:
 
 style main_menu_version:
     properties gui.text_properties("version")
-
-
+    xalign 0.025
+    yalign 0.02
 ## Game Menu screen ############################################################
 ##
 ## This lays out the basic common structure of a game menu screen. It's called
