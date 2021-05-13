@@ -44,7 +44,7 @@ label start:
 
     # These display lines of dialogue.
 
-    e "You've created a new Ren'Py game."
+    e "You've created a new cum'Py g."
 
     e "Once you add a story, pictures, and music, you can release it to the world!"
 menu:
