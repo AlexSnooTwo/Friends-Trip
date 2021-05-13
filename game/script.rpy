@@ -44,7 +44,7 @@ label start:
 
     # These display lines of dialogue.
 
-    e "Kevin tu es un salaud"
+    e "Kevin tu es un salaud ouais mais toi tes un nazillon hehe"
 
     e "plUS QUE D4ËTRE UN SALAUD? TU ES UN BEL ENCUL2!"
 menu:
