@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/gui.rpy", line 40: expected '=' not found.
-    define gui.interface_text_hover_outlines
-                                            ^
+File "game/gui.rpy", line 32: Line is indented, but the preceding define statement statement does not expect a block. Please check this line's indentation.
+    define gui.slot_time_text_outlines = '#AFCBFF'
+    ^
 
 Ren'Py Version: Ren'Py 7.4.4.1439
-Thu May 13 19:46:05 2021
+Thu May 13 20:21:36 2021

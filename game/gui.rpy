@@ -27,6 +27,7 @@ define gui.accent_color = '#004E98'
 #changer la couleur du titre
 define gui.title_text_outlines =[ (0, "#F5853F", 2, 2) ]
 define gui.label_text_outlines =[ (0, "#F5853F", 2, 2) ]
+define gui.version_text_outlines =[ (0, "#F5853F", 2, 2) ]
 
 ## The color used for a text button when it is neither selected nor hovered.
 define gui.idle_color = '#F5853F'

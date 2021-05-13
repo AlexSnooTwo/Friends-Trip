@@ -368,7 +368,7 @@ screen main_menu():
         xalign 0.5
         ypos 1000
 
-        spacing gui.navigation_spacing
+        spacing 200
 
         if main_menu:
 
