@@ -362,8 +362,7 @@ screen main_menu():
     #use navigation
 
     hbox:
-
-
+                
         style_prefix "main_menu"
         xalign 0.5
         ypos 1000
