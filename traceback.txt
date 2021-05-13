@@ -1,26 +1,36 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/gui.rpy", line 163, in script
-    define gui.button_text_size = gui.button_text_size
-  File "game/gui.rpy", line 163, in <module>
-    define gui.button_text_size = gui.button_text_size
-AttributeError: 'StoreModule' object has no attribute 'button_text_size'
+  File "renpy/common/00keymap.rpy", line 463, in script
+    python hide:
+  File "renpy/common/00keymap.rpy", line 463, in <module>
+    python hide:
+  File "renpy/common/00keymap.rpy", line 482, in _execute_python_hide
+    renpy.save("_reload-1", "reload save game")
+AttributeError: 'NoneType' object has no attribute 'stores'
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/gui.rpy", line 163, in script
-    define gui.button_text_size = gui.button_text_size
-  File "D:\Logiciels\renpy-7.3.5-sdk\renpy\ast.py", line 2108, in execute
-    value = renpy.python.py_eval_bytecode(self.code.bytecode)
-  File "D:\Logiciels\renpy-7.3.5-sdk\renpy\python.py", line 2052, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/gui.rpy", line 163, in <module>
-    define gui.button_text_size = gui.button_text_size
-AttributeError: 'StoreModule' object has no attribute 'button_text_size'
+  File "renpy/common/00keymap.rpy", line 463, in script
+    python hide:
+  File "renpy/ast.py", line 922, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "renpy/python.py", line 2218, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "renpy/common/00keymap.rpy", line 463, in <module>
+    python hide:
+  File "renpy/common/00keymap.rpy", line 482, in _execute_python_hide
+    renpy.save("_reload-1", "reload save game")
+  File "renpy/loadsave.py", line 392, in save
+    roots = renpy.game.log.freeze(None)
+  File "renpy/python.py", line 2115, in freeze
+    self.complete(False)
+  File "renpy/python.py", line 1721, in complete
+    self.current.stores[name], self.current.delta_ebc[name] = sd.get_changes(begin)
+AttributeError: 'NoneType' object has no attribute 'stores'
 
-Windows-8-6.2.9200
-Ren'Py 7.3.5.606
- 
-Thu May 13 11:12:29 2021
+Windows-10-10.0.19041
+Ren'Py 7.4.4.1439
+Friends Trip Netherlands
+Thu May 13 16:47:51 2021

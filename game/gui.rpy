@@ -80,7 +80,7 @@ define gui.label_text_size = 50
 define gui.notify_text_size = 40
 
 ## The size of the game's title.
-define gui.title_text_size = 150
+define gui.title_text_size = 75
 
 
 ## Main and Game Menus #########################################################
@@ -160,7 +160,7 @@ define gui.button_tile = False
 define gui.button_text_font = gui.interface_text_font
 
 ## The size of the text used by the button.
-define gui.button_text_size = 45
+define gui.button_text_size = 60
 
 ## The color of button text in various states.
 define gui.button_text_idle_color = gui.idle_color
@@ -196,7 +196,7 @@ define gui.quick_button_text_selected_color = gui.accent_color
 ## For example, you can uncomment the following line to set the width of a
 ## navigation button.
 
-# define gui.navigation_button_width = 250
+define gui.navigation_button_width = 250
 
 
 ## Choice Buttons ##############################################################
@@ -429,7 +429,7 @@ init python:
         gui.name_text_size = 60
         gui.notify_text_size = 40
         gui.interface_text_size = 40
-        gui.button_text_size = 30
+        gui.button_text_size = 60
         gui.label_text_size = 50
 
         ## Adjust the location of the textbox.
