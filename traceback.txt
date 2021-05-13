@@ -33,4 +33,4 @@ AttributeError: 'NoneType' object has no attribute 'stores'
 Windows-10-10.0.19041
 Ren'Py 7.4.4.1439
 Friends Trip Netherlands
-Thu May 13 16:47:51 2021
+Thu May 13 19:46:11 2021

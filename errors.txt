@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/screens.rpy", line 352: u'gui' is not a keyword argument or valid child for the screen statement.
-    gui.interface_text_size = 75
-       ^
+File "game/gui.rpy", line 40: expected '=' not found.
+    define gui.interface_text_hover_outlines
+                                            ^
 
 Ren'Py Version: Ren'Py 7.4.4.1439
-Thu May 13 16:47:06 2021
+Thu May 13 19:46:05 2021

@@ -1,4 +1,3 @@
-﻿# The script of the game goes in this file.
 label splashscreen:
 
     play music "musics/OnlapRock.mp3"
@@ -9,57 +8,47 @@ label splashscreen:
     show text "Après un peu plus d'un an..." with dissolve
     with Pause(3)
 
-    show text "De longues heures de travail..." with dissolve
-    with Pause(3)
-
     show text "Xixi Fou vous présente officiellement..." with dissolve
-    with Pause(3)
+    with Pause(2)
 
     hide text with dissolve
     with Pause(1)
 
     return
-# Declare characters used by this game. The color argument colorizes the
-# name of the character.
 
-define e = Character("Eileen")
+#Characters
+
+define a = Character("Alexis")
+define k = Character("Kevin")
+define n = Character("Nils")
+define f = Character("Fabrice")
+
 define gui.dialogue_text_outlines = [ (0, "#00000080", 2, 2) ]
 define gui.name_text_outlines = [ (0, "#00000080", 2, 2) ]
 
-# The game starts here.
 
 label start:
 
-    # Show a background. This uses a placeholder by default, but you can
-    # add a file (named either "bg room.png" or "bg room.jpg") to the
-    # images directory to show it.
-
     scene bg room
-
-    # This shows a character sprite. A placeholder is used, but you can
-    # replace it by adding a file named "eileen happy.png" to the images
-    # directory.
 
     show eileen happy
 
-    # These display lines of dialogue.
 
-    e "Kevin tu es un salaud ouais mais toi tes un nazillon hehe"
+    a "Kevin tu es un salaud"
+    k "Ouais mais toi tes un nazillon hehe"
 
-    e ""
 menu:
-     "What should I do?"
+     "What should I be"
 
-     "Drink coffee.":
-         "I drink the coffee, and it's good to the last drop."
+     "Salaud.":
+         "Je suis un salaud et j'aime que les autres le sache."
 
-     "Drink tea.":
-         $ drank_tea = True
+     "Nasillon.":
+         $ Nasillon = True
 
-         "I drink the tea, trying not to make a political statement as I do."
+         "Je suis un nasillon, j'essaye de pas en faire tout un plat"
 
 label aftermenu:
-    "JJJ"
+    "J"
 
 return
-    # This ends the game.
