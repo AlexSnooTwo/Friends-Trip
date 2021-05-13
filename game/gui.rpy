@@ -36,6 +36,7 @@ define gui.idle_color = '#F5853F'
 ## achieve the same effect.
 define gui.idle_small_color = '#F5853F'
 
+
 ## The color that is used for buttons and bars that are hovered.
 define gui.hover_color = '#004E98'
 #Changer la couleur du hover
@@ -43,7 +44,11 @@ define gui.interface_text_hover_outlines =[ (0, "#F5853F", 2, 2) ]
 
 ## The color used for a text button when it is selected but not focused. A
 ## button is selected if it is the current screen or preference value.
-define gui.selected_color = '#70D6FF'
+define gui.selected_color = '#AFCBFF'
+define gui.selected_outlines =[ (0, "#004E98", 2, 2) ]
+
+define gui.selected_hover = '#004E98'
+define gui.selected_hover_outlines =[ (0, "#AFCBFF", 2, 2) ]
 
 ## The color used for a text button when it cannot be selected.
 define gui.insensitive_color = '#AFCBFF'
@@ -80,7 +85,7 @@ define gui.name_text_size = 60
 define gui.interface_text_size = 40
 
 ## The size of labels in the game's user interface.
-define gui.label_text_size = 50
+define gui.label_text_size = 40
 
 ## The size of text on the notify screen.
 define gui.notify_text_size = 40
@@ -231,11 +236,20 @@ define gui.choice_button_text_insensitive_color = "#444444"
 define gui.slot_button_width = 414
 define gui.slot_button_height = 309
 define gui.slot_button_borders = Borders(15, 15, 15, 15)
-define gui.slot_button_text_size = 45
+define gui.slot_button_text_size = 30
 define gui.slot_button_text_xalign = 0.5
-define gui.slot_button_text_idle_color = gui.idle_small_color
-define gui.slot_button_text_selected_idle_color = gui.selected_color
-define gui.slot_button_text_selected_hover_color = gui.hover_color
+
+define gui.slot_button_text_idle_color = "#AFCBFF"
+define gui.slot_button_text_idle_outlines =[ (0, "#004E98", 2, 2) ]
+
+define gui.slot_button_text_idle_hover_color = "#AFCBFF"
+define gui.slot_button_text_idle_hover_outlines =[ (0, "#004E98", 2, 2) ]
+
+define gui.slot_button_text_selected_idle_color = "#AFCBFF"
+define gui.slot_button_text_selected_idle_outlines =[ (0, "#004E98", 2, 2) ]
+
+define gui.slot_button_text_selected_hover_color = "#AFCBFF"
+define gui.slot_button_text_selected_hover_outlines =[ (0, "#004E98", 2, 2) ]
 
 ## The width and height of thumbnails used by the save slots.
 define config.thumbnail_width = 384

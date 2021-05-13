@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/gui.rpy", line 32: Line is indented, but the preceding define statement statement does not expect a block. Please check this line's indentation.
-    define gui.slot_time_text_outlines = '#AFCBFF'
-    ^
+File "game/gui.rpy", line 236: is not terminated with a newline. (Check strings and parenthesis.)
+(Perhaps you left out a " at the end of the first line.)
+    define gui.slot_button_text_idle_color = "#
 
 Ren'Py Version: Ren'Py 7.4.4.1439
-Thu May 13 20:21:36 2021
+Fri May 14 00:32:54 2021

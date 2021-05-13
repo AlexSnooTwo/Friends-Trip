@@ -18,39 +18,55 @@ label splashscreen:
 
 #Characters
 
-define a = Character("Alexis") #Red
-define k = Character("Kevin") #Yellow
-define n = Character("Nils") #Blue
-define f = Character("Fabrice") #Green
+define a = Character("Alexis", color= "#FF0000") #Red
+define k = Character("Kevin", color= "#FFFF00") #Yellow
+define n = Character("Nils", color= "#0000FF") #Blue
+define f = Character("Fabrice", color= "#008000") #Green
 #Ajouter 4 Filles, une chacun
 
 define gui.dialogue_text_outlines = [ (0, "#00000080", 2, 2) ]
 define gui.name_text_outlines = [ (0, "#00000080", 2, 2) ]
 
-#Scène qui commence sur un rève d'Alexis, rève qu'il se retrouve à nouveau
-#à Valence à choisir les putes
-#Se réveille de son rêve à l'arrivée à Bruxelles.
-
-
-
 label start:
 
-    scene bg room
+    scene black
 
-    show eileen happy
+    a "Salut les amis !"
+    a "Bon je sais ce que vous vous dîtes."
+    a "On est venus pour jouer nous! Pas pour t'entendre parler sur un fond noir!"
+    a "Et c'est normal... Vous allez pouvoir le faire très bientôt."
+    a "Avant ça j'aimerais dire que ce jeu appartient à une réalité parallèle."
+    a "Dans cette réalité: pas de virus, pas de masques, pas de confinement!"
+    a "Bon si j'étais taquin je dirais qu'il n'y a pas de virus ici non plus."
+    a "Bref."
+    a "On va donc pouvoir commencer."
+    a "Et je voulais vous dire que si jamais on ne pouvait pas aller en Hollande
+    pour quelconque raison."
+    a "On y sera au moins allé ensemble, à travers ce jeu..."
+    a "Allez! Accrochez-vous bien parce que ça commence!"
 
-menu test:
-     "What should I be"
+#scène train
 
-     "Salaud.":
-         "Je suis un salaud et j'aime que les autres le sache."
+menu player:
+    "Qui joue?"
 
-     "Nasillon.":
-         $ Nasillon = True
+    "Nils":
+        $ Nils = True
+        n "Je suis un sale communiste et j'aime que les autres le sache."
 
-         "Je suis un nasillon, j'essaye de pas en faire tout un plat"
+    "Fabrice":
+        $ Fabrice = True
+        f "Dans ce jeu j'ai une petite bite."
 
+    "Alexis":
+        $ Alexis = True
+        a "Je suis un nasillon, j'essaye de pas en faire tout un plat."
+
+    "Kevin":
+        $ Kevin = True
+        k "J'ai une gueule d'homme des cavernes dans ce VN."
 label aftermenu:
-    "J"
+    "Au moins je suis pas un juif"
+
 
 return
