@@ -1,7 +1,7 @@
 #Sprite main menu transformed
 image sprite = At("gui/spritelogo.png", bounce)
 
-
+#Transformation paramètre
 transform bounce:
     alpha 0.0 xalign 0.0 yalign 0.0
     easein 3.0 alpha 1.0
