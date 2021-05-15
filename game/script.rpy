@@ -111,49 +111,32 @@ label train:
     #scene Kevin
 
     f "Putain les gars, pas envie de refaire commme à Valence et vous voir vous dégonfler."
-
     k "Ben ça a rien à voir du coup là."
-
     a "C'est plus comme un espace de détente avec un spa, hamam, piscine."
     a "Avec des filles c'est vrai..."
-
     n "Votre truc là. Je suis pas sûr d'y aller."
-
     k "C'est bon gros tu liras un bouquin à l'hotel."
-
     f "Les gars par contre calmez-vous j'ai une copine aussi."
-
-    a "Ah grooos qu'est tu me racontes tes histoires de cuck là."
-
+    a "Ah grooos qu'est ce que tu me racontes tes histoires de cuck là."
     f "Ben gros à partir du moment où on a une copine pour toi on est un cuck."
-
     a "C'est pas ce que je voulais dire. Tu peux y aller comme moi et Kevin en mode détente."
-
     f "Ouais à ce moment là ça dépend."
-
-    sncf "Chers voyageurs bonjour, nous vous informons que suite à un problème météo votre
+    sncf "Chers voyageurs bonjour."
+    sncf "Nous vous informons que suite à un problème météo votre
     train arrivera à destination avec un retard de diz minutes."
-    scnf "Nous vous prions de nous excuser. L'équipe SNCF vous souhaite une agréable fin de voyage à bord de nos TGV."
-
+    sncf "Nous vous prions de nous excuser. L'équipe SNCF vous souhaite une agréable fin de voyage à bord de nos TGV."
     n "Problème météo? Il fait beau comme en été..."
-
     k "Et ben, dire que ça a pas toujours été aussi médiocre le service ferrovière."
-
     a "*{i}Rire{/i}*"
-
     n "Par contre les gars commencez pas."
     n "Non mais parce que je vous connais avec vos blagues sur les trains."
     n "Je préfère prévenir, parce que sinon ça va vite dérailler."
     n "À tout moment je peux dire à mon pote cheminot de changer de direction."
     n "Et vous aimeriez pas que notre voyage direction Amsterdam se transforme en un aller simple transsibérien."
-
     a "Ça va on a rien dit..."
-
     "{w}.{w}.{w}."
-
-    f "Nils tu penses quoi de la décroissance ?"
+    f "Nils tu penses quoi de la décroissance?"
     n "La seule chose qui va croissante là maintenant c'est mon agacement."
-
     "{w}.{w}.{w}."
 
     #scène d'arrivée en gare
