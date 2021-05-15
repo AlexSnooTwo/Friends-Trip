@@ -20,6 +20,7 @@ define a = Character("Alexis", color= "#FF0000") #Red
 define k = Character("Kevin", color= "#FFFF00") #Yellow
 define n = Character("Nils", color= "#0000FF") #Blue
 define f = Character("Fabrice", color= "#008000") #Green
+define sncf = Character("Annonce")
 #Ajouter 4 Filles, une chacun
 
 define gui.dialogue_text_outlines = [ (0, "#00000080", 2, 2) ]
@@ -68,9 +69,98 @@ menu player:
 "Au moins je suis pas un juif"
 
 label train:
+    # scene qui met en place un train, les personnages, bruit de train
+    scene train
 
-    scene train #scene qui met en place un train, les personnages, bruit de train
+    a "*C'est marrant de se dire qu'on va refaire un voyage cette année.*"
+    a "*Se dire que l'Espagne de l'année dernière était le premier d'une longue
+    série."
+    a "*Après tout c'est rare ces moments où on peut être réellement à quatre."
+    a "*D'habitude, y'en a toujours un de nous qui ne peut pas être présent."
 
-    a "test"
+    # scene Fabrice intervient
+
+    f "On dirait qu'on va bientôt arriver à Bruxelles."
+    f "Ça me fait penser que j'aurais du y passer depuis longtemps."
+    f "J'ai promis à une pote de passer la voir en Belgique."
+    f "J'avoue que l'ambiance déconnade autour d'une bière ça me parle."
+
+    # scene Nils intervient
+
+    n "J'aurais bien aimé te dire que moi aussi j'ai {b}ma{/b} Belge à voir."
+    n "C'était bien parti avec ma colloque."
+    n "Mais bon on reparlera pas de cette expérience romaine..."
+
+    # scene Kevin à Nils
+
+    k "Ben c'est difficile aussi."
+    k "Avoir des discussions avec les gens là... Ouais."
+    k "J'imagine qu'on a pas assez de ce {b}petit truc{/b} qui leur faut pour se sentir amusé."
+    k "J'essaye de sociabiliser et tout mais... Ouais flemme à la fin, surtout que ça débouche souvent sur rien."
+
+    # scene Fabrice répond à Kevin
+
+    f "Ben voilà gros, toi aussi t'es un gros flemmard."
+    f "Faut sortir de sa zone de confort un peu les gars."
+
+    # scene Alexis intervient
+
+    a "Parfois ça part juste d'une panne de PQ les mecs."
+    a "Et ouais... {w}C'est ça qu'est bon!"
+    a "D'ailleurs les gars en Allemagne on va au FKK hein."
+    #scene Kevin
+
+    f "Putain les gars, pas envie de refaire commme à Valence et vous voir vous dégonfler."
+
+    k "Ben ça a rien à voir du coup là."
+
+    a "C'est plus comme un espace de détente avec un spa, hamam, piscine."
+    a "Avec des filles c'est vrai..."
+
+    n "Votre truc là. Je suis pas sûr d'y aller."
+
+    k "C'est bon gros tu liras un bouquin à l'hotel."
+
+    f "Les gars par contre calmez-vous j'ai une copine aussi."
+
+    a "Ah grooos qu'est tu me racontes tes histoires de cuck là."
+
+    f "Ben gros à partir du moment où on a une copine pour toi on est un cuck."
+
+    a "C'est pas ce que je voulais dire. Tu peux y aller comme moi et Kevin en mode détente."
+
+    f "Ouais à ce moment là ça dépend."
+
+    sncf "Chers voyageurs bonjour, nous vous informons que suite à un problème météo votre
+    train arrivera à destination avec un retard de diz minutes."
+    scnf "Nous vous prions de nous excuser. L'équipe SNCF vous souhaite une agréable fin de voyage à bord de nos TGV."
+
+    n "Problème météo? Il fait beau comme en été..."
+
+    k "Et ben, dire que ça a pas toujours été aussi médiocre le service ferrovière."
+
+    a "*{i}Rire{/i}*"
+
+    n "Par contre les gars commencez pas."
+    n "Non mais parce que je vous connais avec vos blagues sur les trains."
+    n "Je préfère prévenir, parce que sinon ça va vite dérailler."
+    n "À tout moment je peux dire à mon pote cheminot de changer de direction."
+    n "Et vous aimeriez pas que notre voyage direction Amsterdam se transforme en un aller simple transsibérien."
+
+    a "Ça va on a rien dit..."
+
+    "{w}.{w}.{w}."
+
+    f "Nils tu penses quoi de la décroissance ?"
+    n "La seule chose qui va croissante là maintenant c'est mon agacement."
+
+    "{w}.{w}.{w}."
+
+    #scène d'arrivée en gare
+
+    sncf "... et n'oubliez pas de laisser un commentaire sur l'appli' SNCF."
+
+    
+
 
 return
