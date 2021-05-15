@@ -1,40 +1,52 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While running game code:
-  File "game/script.rpy", line 74, in script
-    play sound train.mp3
-  File "renpy/common/000statements.rpy", line 300, in execute_play_sound
-    renpy.sound.play(_audio_eval(p["file"]),
-  File "renpy/common/000statements.rpy", line 32, in _audio_eval
-    return eval(expr, locals=store.audio.__dict__)
-  File "game/script.rpy", line 74, in <module>
-    play sound train.mp3
-AttributeError: 'unicode' object has no attribute 'mp3'
+Compiling ATL code at game/script.rpy:10
+Exception: Expression u'1.0' is not an ATL transform, and so cannot be included in an ATL interpolation.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 74, in script
-    play sound train.mp3
-  File "renpy/ast.py", line 1969, in execute
-    self.call("execute")
-  File "renpy/ast.py", line 1957, in call
-    return renpy.statements.call(method, parsed, *args, **kwargs)
-  File "renpy/statements.py", line 278, in call
-    return method(parsed, *args, **kwargs)
-  File "renpy/common/000statements.rpy", line 300, in execute_play_sound
-    renpy.sound.play(_audio_eval(p["file"]),
-  File "renpy/common/000statements.rpy", line 32, in _audio_eval
-    return eval(expr, locals=store.audio.__dict__)
-  File "renpy/python.py", line 2249, in py_eval
-    return py_eval_bytecode(code, globals, locals)
-  File "renpy/python.py", line 2242, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/script.rpy", line 74, in <module>
-    play sound train.mp3
-AttributeError: 'unicode' object has no attribute 'mp3'
+  File "renpy/common/_layout/screen_main_menu.rpym", line 28, in script
+    python hide:
+  File "renpy/ast.py", line 922, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "renpy/python.py", line 2218, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "renpy/common/_layout/screen_main_menu.rpym", line 28, in <module>
+    python hide:
+  File "renpy/common/_layout/screen_main_menu.rpym", line 35, in _execute_python_hide
+    ui.interact()
+  File "renpy/ui.py", line 298, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "renpy/display/core.py", line 3101, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, **kwargs)
+  File "renpy/display/core.py", line 3512, in interact_core
+    root_widget.visit_all(lambda i : i.per_interact())
+  File "renpy/display/core.py", line 567, in visit_all
+    d.visit_all(callback, seen)
+  File "renpy/display/core.py", line 567, in visit_all
+    d.visit_all(callback, seen)
+  File "renpy/display/core.py", line 567, in visit_all
+    d.visit_all(callback, seen)
+  File "renpy/display/screen.py", line 437, in visit_all
+    self.child.visit_all(callback, seen=None)
+  File "renpy/display/core.py", line 567, in visit_all
+    d.visit_all(callback, seen)
+  File "renpy/display/core.py", line 567, in visit_all
+    d.visit_all(callback, seen)
+  File "renpy/display/core.py", line 557, in visit_all
+    for d in self.visit():
+  File "renpy/atl.py", line 650, in visit
+    block = self.compile()
+  File "renpy/atl.py", line 557, in compile
+    block = self.atl.compile(self.context)
+  File "renpy/atl.py", line 752, in compile
+    statements = [ i.compile(ctx) for i in self.statements ]
+  File "renpy/atl.py", line 1020, in compile
+    raise Exception("Expression %r is not an ATL transform, and so cannot be included in an ATL interpolation." % expr)
+Exception: Expression u'1.0' is not an ATL transform, and so cannot be included in an ATL interpolation.
 
 Windows-10-10.0.19041
 Ren'Py 7.4.4.1439
 Friends Trip Netherlands
-Sat May 15 18:12:40 2021
+Sat May 15 20:58:39 2021

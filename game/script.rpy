@@ -1,3 +1,15 @@
+#Sprite main menu transformed
+image sprite = At("gui/spritelogo.png", bounce)
+
+
+transform bounce:
+    alpha 0.0 xalign 0.0 yalign 0.0
+    easein 3.0 alpha 1.0
+    easein 2.0 yalign 0.5
+    pause 3
+    easein 4.0 xalign 0.0 alpha 0.0
+
+
 label splashscreen:
 
     play music "musics/OnlapRock.mp3"

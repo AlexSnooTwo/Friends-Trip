@@ -353,7 +353,7 @@ screen main_menu():
 
     add gui.main_menu_background
     #Sprite main menu
-    add "gui/spritelogo.png" xalign 1.0 yalign 0.5
+    add "sprite"
 
     ## This empty frame darkens the main menu.
     frame:
