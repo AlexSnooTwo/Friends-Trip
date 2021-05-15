@@ -72,11 +72,11 @@ label train:
     # scene qui met en place un train, les personnages, bruit de train
     scene train
 
-    a "*C'est marrant de se dire qu'on va refaire un voyage cette année.*"
-    a "*Se dire que l'Espagne de l'année dernière était le premier d'une longue
-    série."
-    a "*Après tout c'est rare ces moments où on peut être réellement à quatre."
-    a "*D'habitude, y'en a toujours un de nous qui ne peut pas être présent."
+    a "*{i}C'est marrant de se dire qu'on va refaire un voyage cette année.{/i}*"
+    a "*{i}Se dire que l'Espagne de l'année dernière était le premier d'une longue
+    série.{/i}*"
+    a "*{i}Après tout c'est rare ces moments où on peut être réellement à quatre.{/i}*"
+    a "*{i}D'habitude, y'en a toujours un de nous qui ne peut pas être présent.{/i}*"
 
     # scene Fabrice intervient
 
@@ -160,7 +160,7 @@ label train:
 
     sncf "... et n'oubliez pas de laisser un commentaire sur l'appli' SNCF."
 
-    
+
 
 
 return
