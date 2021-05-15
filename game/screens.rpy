@@ -352,6 +352,8 @@ screen main_menu():
     style_prefix "main_menu"
 
     add gui.main_menu_background
+    #Sprite main menu
+    add "gui/spritelogo.png" xalign 1.0 yalign 0.5
 
     ## This empty frame darkens the main menu.
     frame:
@@ -1233,6 +1235,7 @@ style nvl_window:
     variant "small"
     background "gui/phone/nvl.png"
 
+#sprite du menu
 style main_menu_frame:
     variant "small"
     background "gui/phone/overlay/main_menu.png"

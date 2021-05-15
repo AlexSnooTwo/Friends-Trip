@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 74: is not terminated with a newline. (Check strings and parenthesis.)
-(Perhaps you left out a " at the end of the first line.)
-        a "test
+File "game/screens.rpy", line 357: u'xalign' is not a keyword argument or valid child for the screen statement.
+    xalign 1.0 yalign 0.5
+          ^
 
 Ren'Py Version: Ren'Py 7.4.4.1439
-Sat May 15 16:52:32 2021
+Sat May 15 18:44:18 2021

@@ -29,6 +29,7 @@ define gui.name_text_outlines = [ (0, "#00000080", 2, 2) ]
 label start:
 
     scene black
+    stop music fadeout 1
 
     a "Salut les amis !"
     a "Bon je sais ce que vous vous dîtes."
@@ -71,7 +72,7 @@ menu player:
 label train:
     # scene qui met en place un train, les personnages, bruit de train
     scene train
-
+    play sound "audio/train.mp3"
     a "*{i}C'est marrant de se dire qu'on va refaire un voyage cette année.{/i}*"
     a "*{i}Se dire que l'Espagne de l'année dernière était le premier d'une longue
     série.{/i}*"
@@ -139,6 +140,7 @@ label train:
     n "La seule chose qui va croissante là maintenant c'est mon agacement."
     "{w}.{w}.{w}."
 
+    stop sound fadeout 1
     #scène d'arrivée en gare
 
     sncf "... et n'oubliez pas de laisser un commentaire sur l'appli' SNCF."
