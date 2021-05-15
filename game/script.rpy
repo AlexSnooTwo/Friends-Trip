@@ -33,7 +33,7 @@ define k = Character("Kevin", color= "#FFFF00") #Yellow
 define n = Character("Nils", color= "#0000FF") #Blue
 define f = Character("Fabrice", color= "#008000") #Green
 define sncf = Character("Annonce")
-#Ajouter 4 Filles, une chacun
+#Ajouter 5 Filles, une chacun, deux pour kevin
 
 define gui.dialogue_text_outlines = [ (0, "#00000080", 2, 2) ]
 define gui.name_text_outlines = [ (0, "#00000080", 2, 2) ]
