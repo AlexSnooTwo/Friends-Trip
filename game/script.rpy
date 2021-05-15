@@ -10,9 +10,7 @@ label splashscreen:
 
     show text "Xixi Fou vous présente officiellement..." with dissolve
     with Pause(2)
-
     hide text with dissolve
-    with Pause(1)
 
     return
 
@@ -45,7 +43,8 @@ label start:
     a "On y sera au moins allé ensemble, à travers ce jeu..."
     a "Allez! Accrochez-vous bien parce que ça commence!"
 
-#scène train
+#Menu avec les sprites de chacun façon BADK fin épisode 3 avec choix en
+#en surbrillance
 
 menu player:
     "Qui joue?"
@@ -65,8 +64,13 @@ menu player:
     "Kevin":
         $ Kevin = True
         k "J'ai une gueule d'homme des cavernes dans ce VN."
-label aftermenu:
-    "Au moins je suis pas un juif"
 
+"Au moins je suis pas un juif"
+
+label train:
+
+    scene train #scene qui met en place un train, les personnages, bruit de train
+
+    a "test"
 
 return

@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/gui.rpy", line 236: is not terminated with a newline. (Check strings and parenthesis.)
+File "game/script.rpy", line 74: is not terminated with a newline. (Check strings and parenthesis.)
 (Perhaps you left out a " at the end of the first line.)
-    define gui.slot_button_text_idle_color = "#
+        a "test
 
 Ren'Py Version: Ren'Py 7.4.4.1439
-Fri May 14 00:32:54 2021
+Sat May 15 16:52:32 2021
