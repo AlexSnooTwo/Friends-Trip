@@ -12,6 +12,8 @@ transform bounce:
 
 label splashscreen:
 
+    $ renpy.movie_cutscene('logoxixi.ogv')
+
     play music "musics/OnlapRock.mp3"
 
     scene black
@@ -83,7 +85,7 @@ menu player:
 
 label train:
     # scene qui met en place un train, les personnages, bruit de train
-    scene train
+    scene fab_train1
     play sound "audio/train.mp3"
     a "*{i}C'est marrant de se dire qu'on va refaire un voyage cette année.{/i}*"
     a "*{i}Se dire que l'Espagne de l'année dernière était le premier d'une longue
@@ -91,7 +93,7 @@ label train:
     a "*{i}Après tout c'est rare ces moments où on peut être réellement à quatre.{/i}*"
     a "*{i}D'habitude, y'en a toujours un de nous qui ne peut pas être présent.{/i}*"
 
-    # scene Fabrice intervient
+    scene fab_train2
 
     f "On dirait qu'on va bientôt arriver à Bruxelles."
     f "Ça me fait penser que j'aurais du y passer depuis longtemps."
