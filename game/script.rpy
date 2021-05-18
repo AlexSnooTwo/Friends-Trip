@@ -86,7 +86,7 @@ menu player:
 label train:
     # scene qui met en place un train, les personnages, bruit de train
     scene fab_train1
-    play sound "audio/train.mp3"
+    play sound "audio/train.mp3" loop
     a "*{i}C'est marrant de se dire qu'on va refaire un voyage cette année.{/i}*"
     a "*{i}Se dire que l'Espagne de l'année dernière était le premier d'une longue
     série.{/i}*"
@@ -122,7 +122,7 @@ label train:
     scene fab_train2
     f "Putain les gars, pas envie de refaire commme à Valence et vous voir vous dégonfler."
 
-
+    scene kevin_train_cheeky
     k "Ben ça a rien à voir du coup là."
 
     scene alex_train
@@ -132,41 +132,56 @@ label train:
     scene nils_fab_train
     n "Votre truc là. Je suis pas sûr d'y aller."
 
+    scene kevin_train_cheeky
     k "C'est bon gros tu liras un bouquin à l'hotel."
 
+    scene fab_train_cuck
     f "Les gars par contre calmez-vous j'ai une copine aussi."
 
     scene alex_train
     a "Ah grooos qu'est ce que tu me racontes tes histoires de cuck là."
 
+    scene fab_train_cuck
     f "Ben gros à partir du moment où on a une copine pour toi on est un cuck."
 
+    scene alex_train
     a "C'est pas ce que je voulais dire. Tu peux y aller comme moi et Kevin en mode détente."
 
+    scene fab_train_cuck
     f "Ouais à ce moment là ça dépend."
 
+    scene corridor_train
     sncf "Chers voyageurs bonjour."
     sncf "Nous vous informons que suite à un problème météo votre
     train arrivera à destination avec un retard de diz minutes."
     sncf "Nous vous prions de nous excuser. L'équipe SNCF vous souhaite une agréable fin de voyage à bord de nos TGV."
 
+    scene nils_fab_train
     n "Problème météo? Il fait beau comme en été..."
 
+    scene kevin_train_cheeky
     k "Et ben, dire que ça a pas toujours été aussi médiocre le service ferrovière."
 
+    scene alex_train
     a "*{i}Rire{/i}*"
 
+    scene nils_train_anger
     n "Par contre les gars commencez pas."
     n "Non mais parce que je vous connais avec vos blagues sur les trains."
     n "Je préfère prévenir, parce que sinon ça va vite dérailler."
     n "À tout moment je peux dire à mon pote cheminot de changer de direction."
     n "Et vous aimeriez pas que notre voyage direction Amsterdam se transforme en un aller simple transsibérien."
 
+    scene alex_train
     a "Ça va on a rien dit..."
+
+    scene corridor_train
     "{w}.{w}.{w}."
 
+    scene fab_train2
     f "Nils tu penses quoi de la décroissance?"
 
+    scene nils_train_anger
     n "La seule chose qui va croissante là maintenant c'est mon agacement."
     "{w}.{w}.{w}."
 
