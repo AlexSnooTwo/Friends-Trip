@@ -186,7 +186,7 @@ label train:
     "{w}.{w}.{w}."
 
     stop sound fadeout 1
-    #scène d'arrivée en gare
+    scene station
 
     sncf "... et n'oubliez pas de laisser un commentaire sur l'appli' SNCF."
 
