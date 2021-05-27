@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 7: ATL statement contains two expressions in a row; is one of them a misspelled property? If not, separate them with pass.
-    linearbounce 1.0 alpha 1.0
-                     ^
+File "game/script.rpy", line 222: end of line expected.
+    f "Pour une semaine.":
+                         ^
 
 Ren'Py Version: Ren'Py 7.4.4.1439
-Sat May 15 20:50:33 2021
+Mon May 24 13:49:24 2021
