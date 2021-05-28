@@ -188,11 +188,9 @@ label train:
     stop sound fadeout 1
     play music "musics/GoodTimes.MP3"
     scene station with dissolve
-
     sncf "...et n'oubliez pas de laisser un commentaire sur l'appli' SNCF."
 
     scene taxi with dissolve
-
     a "Bon ben go chercher les vélos les gars."
 
 label bikeshop:
@@ -246,5 +244,29 @@ label bikeshop:
     scene bikeshop_tenant with dissolve
     "Vendeur" "Ah oui monsieur, ça alors qu'il faut y aller à l'endroit!"
     "{i}Rires{/i}"
+
+    scene bikeshop_tenant2 with dissolve
+    a "Bon ben on vous les prend pour une semaine du coup."
+
+    stop music fadeout 1
+    play music "musics/all_the_roads.mp3"
+    scene black with dissolve
+    "Après quelques formalités administratives..."
+
+label bikeroad:
+
+    scene bikeroad1 with dissolve
+    f "À fond les balloooooons!"
+    n "La vache, dire que je parlais de faire le grand tour avec Hambourg!"
+    "{i}Halètements{/i}"
+    f "On va pas se mentir c'est un peu plat pour l'instant."
+    a "Faut profiter tant qu'on a pas de reliefs pour faire des sprints!"
+    f "Typiquement Alexis ça à vouloir faire des sprints et être cramé après."
+    a "Go go go!"
+
+    scene bikeroad2 with dissolve
+    k "Take it easy!"
+    a "Direction Anvers!!!"
+    n "On peut pas faire une pause les gars?"
 
 return
