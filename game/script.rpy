@@ -163,7 +163,7 @@ label train:
     k "Et ben, dire que ça a pas toujours été aussi médiocre le service ferrovière."
 
     scene alex_train with dissolve
-    a "*{i}Rire{/i}*"
+    a "*{i}Rires{/i}*"
 
     scene nils_train_anger with dissolve
     n "Par contre les gars commencez pas."
@@ -234,7 +234,7 @@ label bikeshop:
 
     scene bikeshop_tenant with dissolve
     "Vendeur" "Ah oui Monsieur, vous avez raison, en plus ils sont à votre taille."
-    "Vendeur" "Vous allez beaucoup rrouler ?"
+    "Vendeur" "Vous allez beaucoup rrouler?"
 
     scene bikeshop_tenant2 with dissolve
     k "On va au moins jusqu'à Amsterdam chef."
@@ -261,12 +261,39 @@ label bikeroad:
     "{i}Halètements{/i}"
     f "On va pas se mentir c'est un peu plat pour l'instant."
     a "Faut profiter tant qu'on a pas de reliefs pour faire des sprints!"
-    f "Typiquement Alexis ça à vouloir faire des sprints et être cramé après."
+    f "Typiquement Alexis ça. À vouloir faire des sprints et être cramé après."
     a "Go go go!"
 
     scene bikeroad2 with dissolve
     k "Take it easy!"
     a "Direction Anvers!!!"
     n "On peut pas faire une pause les gars?"
+    f "J'ai une impression de déjà vu."
+    f "La musique, la scène..."
+    a "T'entends une musique toi?"
 
+    scene bikeroad3 with dissolve
+    k "Hâte d'une petite bière là."
+    n "Y'a pas eu de transition Kevin."
+    n "Entre la phrase de Fabrice et la tienne."
+    k "Ah. Euh, ouais."
+    n "Tu devrais littéralement ouvrir ton bouquin de grammaire un jour."
+    k "Ouais. Je suis victime de ma condition. Prolo' qui reproduit ses codes."
+    n "T'appartiens quand même à une grande lignée d'Angleterre."
+    k "Ah. Ouais ça. Tu parles de mon père alcoolique?"
+    n "N'empêche qu'on doit aller voir ta famille dans le Westshire."
+    f "Pour l'instant on va surtout esssayer d'arriver à Anvers."
+    a "Le dernier arrivé à l'hotel a perdu!"
+
+    scene bikeroad2 with dissolve
+    $ renpy.pause ()
+
+    scene black with dissolve
+    "Après un trajet plus ou moins long et une bonne douche à l'hotel."
+
+label bar:
+
+    scene street with dissolve
+    f "Bon les gars choisissez un bar où je prends le premier qui vient."
+    f "On tourne en rond depuis tout à l'heure."
 return
