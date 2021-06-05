@@ -293,7 +293,38 @@ label bikeroad:
 
 label bar:
 
-    scene street with dissolve
+    play music "musics/funkbar.mp3"
+    scene anvers with dissolve
+
     f "Bon les gars choisissez un bar où je prends le premier qui vient."
     f "On tourne en rond depuis tout à l'heure."
+    k "C'est bon j'en vois un qui a l'air pas mal sur google."
+
+    scene waitress_bar with dissolve
+
+    "Serveuse" "Hallo jongens! Welkom in de tofste bar van Antwerpen."
+    f "What? J'ai pas fait allemand moi. Nils!"
+    n "Je bite pas un mot de Batave, c'est pas de l'Allemand..."
+    "Serveuse" "Je peux parler Français aussi si vous voulez. J'ai vécu à Bruxelles."
+    "Serveuse" "Bite?"
+    n "Euh."
+
+    scene counter_bar with dissolve
+
+    a "Hey les gars venez vite vous assoir le gars est déjà en train d'aroser le comptoir de bières!"
+
+    scene waitress_bar with dissolve
+    "Serveuse" "Dîtes moi directement pour d'autres boissons que la bière."
+    "Serveuse" "Je vous apporterai ça."
+
+    scene counter_bar with dissolve
+    a "T'as pas plutôt vu la nana derrière? C'est pas la bière que j'ai envie de tirer."
+    f "Nils on dirait que tu tombes pour la serveuse."
+    n "On dirait que ce bar a de bonnes... {w}bières."
+    f "Et toi Kevin ça pourrait bien être ta chance la fille derrière."
+
+    scene counter_girl with dissolve
+    k "Ouais."
+    k "Ah ok."
+
 return

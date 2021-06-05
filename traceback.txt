@@ -1,28 +1,22 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 241, in script
-    scene bikeshop_tenant2 with dissolves
-  File "game/script.rpy", line 241, in <module>
-    scene bikeshop_tenant2 with dissolves
-NameError: name 'dissolves' is not defined
+  File "game/script.rpy", line 301, in script
+    K "C'est bon j'en vois un qui a l'air pas mal sur google."
+Exception: Sayer 'K' is not defined.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 241, in script
-    scene bikeshop_tenant2 with dissolves
-  File "renpy/ast.py", line 1393, in execute
-    paired = renpy.python.py_eval(self.paired)
-  File "renpy/python.py", line 2249, in py_eval
-    return py_eval_bytecode(code, globals, locals)
-  File "renpy/python.py", line 2242, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/script.rpy", line 241, in <module>
-    scene bikeshop_tenant2 with dissolves
-NameError: name 'dissolves' is not defined
+  File "game/script.rpy", line 301, in script
+    K "C'est bon j'en vois un qui a l'air pas mal sur google."
+  File "renpy/ast.py", line 680, in execute
+    who = eval_who(self.who, self.who_fast)
+  File "renpy/ast.py", line 574, in eval_who
+    raise Exception("Sayer '%s' is not defined." % who)
+Exception: Sayer 'K' is not defined.
 
 Windows-10-10.0.19041
-Ren'Py 7.4.4.1439
+Ren'Py 7.4.5.1648
 Friends Trip Netherlands
-Thu May 27 23:44:42 2021
+Sat Jun  5 23:54:17 2021
