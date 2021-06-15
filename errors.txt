@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 222: end of line expected.
-    f "Pour une semaine.":
-                         ^
+File "game/script.rpy", line 342: choice menuitem expects a non-empty block.
+    "Pas tout de suite":
+                        ^
 
-Ren'Py Version: Ren'Py 7.4.4.1439
-Mon May 24 13:49:24 2021
+Ren'Py Version: Ren'Py 7.4.5.1648
+Tue Jun 15 18:35:49 2021

@@ -305,8 +305,8 @@ label bar:
     "Serveuse" "Hallo jongens! Welkom in de tofste bar van Antwerpen."
     f "What? J'ai pas fait allemand moi. Nils!"
     n "Je bite pas un mot de Batave, c'est pas de l'Allemand..."
-    "Serveuse" "Je peux parler Français aussi si vous voulez. J'ai vécu à Bruxelles."
     "Serveuse" "Bite?"
+    "Serveuse" "Je peux parler Français aussi si vous voulez. J'ai vécu à Bruxelles."
     n "Euh."
 
     scene counter_bar with dissolve
@@ -326,5 +326,24 @@ label bar:
     scene counter_girl with dissolve
     k "Ouais."
     k "Ah ok."
+    "*{i}Sueur{/i}*"
+
+    scene barview with dissolve
+    f "Bon on dirait bien que y'a que des couilles dans ce bar."
+    n "Y'a surtout pas grand monde, rappelons nous de ne pas laisser Kevin nous
+    choisir un bar pour la prochaine fois."
+
+    call screen freeroamBar
+
+label finbar:
+    scene barview
+    menu endbar:
+        "Partir":
+            n "Je suis un sale communiste et j'aime que les autres le sache."
+
+        "Pas tout de suite":
+            call screen freeroamBar
+    "Test du screen"
+    "Fin"
 
 return

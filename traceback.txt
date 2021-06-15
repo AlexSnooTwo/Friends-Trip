@@ -1,22 +1,28 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 301, in script
-    K "C'est bon j'en vois un qui a l'air pas mal sur google."
-Exception: Sayer 'K' is not defined.
+  File "game/freeroamBar.rpy", line 47, in script
+    call screen freeroamBar
+ScriptError: could not find label 'kevinbar'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 301, in script
-    K "C'est bon j'en vois un qui a l'air pas mal sur google."
-  File "renpy/ast.py", line 680, in execute
-    who = eval_who(self.who, self.who_fast)
-  File "renpy/ast.py", line 574, in eval_who
-    raise Exception("Sayer '%s' is not defined." % who)
-Exception: Sayer 'K' is not defined.
+  File "renpy/bootstrap.py", line 326, in bootstrap
+    renpy.main.main()
+  File "renpy/main.py", line 617, in main
+    run(restart)
+  File "renpy/main.py", line 148, in run
+    renpy.execution.run_context(True)
+  File "renpy/execution.py", line 922, in run_context
+    context.run()
+  File "game/freeroamBar.rpy", line 47, in script
+    call screen freeroamBar
+  File "renpy/script.py", line 910, in lookup
+    raise ScriptError("could not find label '%s'." % str(original))
+ScriptError: could not find label 'kevinbar'.
 
 Windows-10-10.0.19041
 Ren'Py 7.4.5.1648
 Friends Trip Netherlands
-Sat Jun  5 23:54:17 2021
+Tue Jun 15 19:39:56 2021
