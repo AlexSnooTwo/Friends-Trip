@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 342: choice menuitem expects a non-empty block.
-    "Pas tout de suite":
-                        ^
+File "game/freeroamBar.rpy", line 4: expected '=' not found.
+    define image animated_patrick:
+                 ^
 
 Ren'Py Version: Ren'Py 7.4.5.1648
-Tue Jun 15 18:35:49 2021
+Wed Jun 23 14:20:35 2021
