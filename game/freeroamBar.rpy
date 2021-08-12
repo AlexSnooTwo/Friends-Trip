@@ -85,12 +85,43 @@ label alexbar:
 label kevinbar:
     scene screen_bar
     if girlseen == True:
-        "Ça reste encore un peu timide comme drague."
-        "Au moins il à l'air d'entretenir la conversation."
+        f "Ça reste encore un peu timide comme drague."
+        f "Au moins il à l'air d'entretenir la conversation."
+        f "Attends! Je rêve où elle l'invite à la suivre?!"
         call screen freeroamBar
     else:
         scene counter_girl
         k "Euh.. Salut?!"
+        scene black
+        "Upgrade matériel"
+        scene counter_girl2
+        fb "Hey!"
+        fb "Vous avez mis de l'ambiance à vous quatre."
+        scene counter_girl3
+        k "Ah! Euh, ouais..."
+        k "J'imagine qu'on porte un peu de bonne humeur."
+        k " Déjà à Grenade on avait fait ça."
+        scene counter_girl2
+        fb "Ouah! Vous êtes allés à Grenade?!"
+        fb "Je rêve d'y aller. L'Alhambra, le soleil, la nourriture..."
+        scene counter_girl3
+        k "Ah ben petit {i}rebujito{/i} là. Hmmm"
+        k "Après, y'en a qui diront que l'Alhambra c'est répétitif."
+        scene counter_girl2
+        fb "Y'aura toujours des gens qui sont pas satisfaits..."
+        fb "Faut de tout pour faire un monde!"
+        fb "En fait! Tu m'as pas dit ton prénom."
+        ca "Moi c'est Cassandre"
+        scene counter_girl3
+        k "Kevin sans accent sur le e, comme sur democratie."
+        scene counter_girl_rire
+        ca "{i}*rires*{/i} {w}Pourquoi pas d'accent sur démocratie?"
+        scene counter_girl3
+        k "Oh... Pour rien. La dissonance cognitive sonnait bien."
+        scene counter_girl_rire
+        ca "*rires* Décidément! On cache un humour fin de gentleman."
+
+
         $ girlseen = True
         call screen freeroamBar
 
